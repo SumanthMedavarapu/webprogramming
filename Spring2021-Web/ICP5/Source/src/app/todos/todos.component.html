@@ -1,0 +1,46 @@
+<div class="todo-container">
+    <h2 class="header">Todo App</h2>
+    <div class="todo-input">
+        <p class="error" style="color: red;" *ngIf="error">Please enter a task.</p>
+        <!--      (keyup.enter)="addTodo()"  -->
+        <input type="text" placeholder="Enter a todo task" [(ngModel)]="todoName" class="form-control">
+        <div style="display: inline-block;margin:5px 5px 5px 5px" class="input-group-addon hover-cursor"  (click)="addTodo()">
+            <i class="fa fa-plus-circle fa-2x"></i>
+        </div>
+    </div>
+    <div class="todo-list">
+        <div class="todo-item" [class.completed]="todo.completed" *ngFor="let todo of todos; let i=index">
+            <!--<div class="index">  style="color:green"
+                {{i + 1}}
+            </div>
+            <div class="complete">
+                <i class="fa fa-check-circle-o" style="font-size:40px;" aria-hidden="true" (click)="toggleTodo(i)"></i>
+            </div>-->
+
+            <input type="checkbox" name="" style="font-size:30px;"   (click)="toggleTodo(i)">
+            <div class="icon-box">
+              <i class="fa fa-check-circle-o" style="font-size:40px;" area-hidden="true"></i>
+            </div>
+            
+
+            <div class="name">
+                {{todo.name}}
+            </div>
+            <div class="status">
+                {{todo.completed ? 'Completed' : 'Pending'}}
+            </div>
+            <div class="actions">
+                <div class="edit">
+                    <i *ngIf="!todo.completed" class="fa fa-pencil" aria-hidden="true" (click)="editTodo(i)"></i>
+                </div>
+               <!-- <div class="delete">
+                    <i class="fa fa-trash" aria-hidden="true" (click)="deleteTodo(i)"></i>
+                </div>-->
+                <span class="hover-cursor text-danger pull-right" (click)="deleteTodo(i)">
+                    <i class="fa fa-trash-o fa-lg" style= "font-size:40px;"></i>
+                </span>
+                
+            </div>
+        </div>
+    </div>
+</div>
