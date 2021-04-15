@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-dynamic-links:11.0.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a5a090d2dd1defdec1153cd7ed7c9c8b/firebase-dynamic-links-11.0.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a5a090d2dd1defdec1153cd7ed7c9c8b/firebase-dynamic-links-11.0.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/06b204d861cad60d3e51a0ec1d8be498/firebase-dynamic-links-11.0.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/00e032f561bede724600fff8bd2b2cf4/firebase-dynamic-links-11.0.4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/00e032f561bede724600fff8bd2b2cf4/firebase-dynamic-links-11.0.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/00e032f561bede724600fff8bd2b2cf4/firebase-dynamic-links-11.0.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
